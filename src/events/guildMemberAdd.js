@@ -24,7 +24,8 @@ const getWelcomeMessage = (userId) => {
     Play around with the code here and customise the welcome message.
   */
   return {
-    content: `Welcome ${userMention(userId)}, JSN is the best Wide receiver in the league. Remember that.
+   content: `Welcome ${userMention(userId)},
+    Hope you have great time here!
   `,
   };
 };
@@ -40,7 +41,8 @@ const getWelcomeMessageWithMeme = async (userId) => {
   const meme = await getMeme();
 
   return {
-    content: `Welcome ${userMention(userId)}, Here's a meme for you to enjoy to remind you who is the best team!`,
+    content: `Welcome ${userMention(userId)},
+    Here's a meme for you to enjoy!`,
     embeds: [meme],
   };
 };
